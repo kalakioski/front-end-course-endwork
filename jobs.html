@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Javajam</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">PCPC</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="services.html" class="nav-links">Services</a></li>
+                <li><a href="#" class="nav-links">Music</a></li>
+                <li><a href="jobs.html" class="nav-links">Jobs</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <h1>Job Opportunities</h1>
+                <p>
+                    Want to join us on our mission? Submit an open application!
+                </p>
+                <button class="main-btn"><a href="#">Sign Up</a></button>
+            </div>
+            <div class="main-image-container">
+                <img src="images/pic2.svg" alt="" id="main-img">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+
+    <div class="modal" id="email-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content-left">
+                <img id="modal-img" src="images/pic3.svg" alt="">
+            </div>
+            <div class="modal-content-right">
+                <form action="/" method="GET" class="modal-form" id="form">
+                <h1>
+                    Get started with us today! 
+                    Create your application by filling out the information below.
+                </h1>
+                <div class="form-validation">
+                    <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
+                    <p>Error Message</p>
+                </div>
+                <div class="form-validation">
+                    <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email">
+                    <p>Error Message</p>
+                </div>
+                <div class="form-validation">
+                    <textarea type="text" class="modal-input" id="intro" name="intro" placeholder="Introduce yourself!"></textarea>
+                    <p>Error Message</p>
+                </div>
+                <input type="submit" class="modal-input-btn" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
