@@ -75,7 +75,7 @@
   opacity: 1;
   transition: all 0.3s ease-in-out;
   transform: scale(1.2);
-  z-index: 100;
+  z-index: 99;
   overflow: hidden;
 }
 
@@ -97,6 +97,23 @@
   transform: translate(-100px, 600%) rotate(45deg);
   transition: transform 0.5s;
 }
+
+/* Pop-up window when clicked */
+.img-window {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* Responsive */
 @media screen and (min-width: 550px) and (max-width: 825px) {
