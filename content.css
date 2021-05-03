@@ -70,7 +70,7 @@
   width: 100%;
 }
 
-.main-img.container {
+.main-img-container {
   text-align: center;
 }
 
@@ -78,6 +78,7 @@
   height: 80%;
   width: 80%;
 }
+
 
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
